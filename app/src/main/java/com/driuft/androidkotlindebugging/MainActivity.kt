@@ -1,12 +1,15 @@
 package com.driuft.androidkotlindebugging
 
-import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.driuft.androidkotlindebugging.ui.*
-import kotlin.coroutines.coroutineContext
+import androidx.appcompat.app.AppCompatActivity
+import com.driuft.androidkotlindebugging.ui.CurrentDayActivity
+import com.driuft.androidkotlindebugging.ui.FavoriteNumber
+import com.driuft.androidkotlindebugging.ui.HelloWorldActivity
+import com.driuft.androidkotlindebugging.ui.NumSumActivity
+import com.driuft.androidkotlindebugging.ui.PrintListActivity
+import com.driuft.androidkotlindebugging.ui.RandomColorActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchHelloWorldActivity() {
-        val i = Intent(404 as Context, HelloWorldActivity::class.java)
+        val i = Intent(this, HelloWorldActivity::class.java)
         startActivity(i)
     }
 

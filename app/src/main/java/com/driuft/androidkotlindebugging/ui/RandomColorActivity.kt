@@ -4,9 +4,8 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
 import com.driuft.androidkotlindebugging.R
-import java.util.*
+import java.util.Random
 
 class RandomColorActivity : AppCompatActivity() {
 
@@ -21,8 +20,6 @@ class RandomColorActivity : AppCompatActivity() {
 
     private fun getRandomColor(): Int {
         // Get random color// Get random color// Get random color// Get random color
-        getRandomColor()
-
         val rnd = Random()
         return Color.argb(
             255,
